@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\vulkan.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\win32_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\win32_joystick.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\win32_monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\win32_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\win32_thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\win32_window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\wgl_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\egl_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\osmesa_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\mappings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-build\src\glfw_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\include\GLFW\glfw3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\include\GLFW\glfw3native.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\win32_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\win32_joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\wgl_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\egl_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\osmesa_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\utente\Desktop\Computer Graphics - OpenGL\glfw-3.3.9\glfw-3.3.9\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A479C4E3-1169-3E8A-8F07-A9B3C72FEDED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D31CD9E3-1CFE-3BBB-AA17-AFE210445D1E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
