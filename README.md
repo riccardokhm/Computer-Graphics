@@ -1,12 +1,11 @@
 <a href="https://postgresql.org"><img src="https://img.shields.io/badge/Powered%20by-LearnOpenGL-blue.svg"/></a>
 
+<---! ![alt text](https://github.com/riccardokhm/Computer-Graphics/blob/main/OpenGL_Icon.jpg?raw=true) --->
 
-<p align="center"> 
-  <img  src="https://https://github.com/riccardokhm/Computer-Graphics/blob/main/OpenGL_Icon.jpg"> 
+<p align="center">
+  <img width="460" height="300" src="https://github.com/riccardokhm/Computer-Graphics/blob/main/OpenGL_Icon.jpg">
 </p>
 
-
-![alt text](https://github.com/riccardokhm/Computer-Graphics/blob/main/OpenGL_Icon.jpg?raw=true) 
 # Computer-Graphics
 
 This repository collects all the examples extrapolated from the LearnOpenGL book which you can find [here](https://learnopengl.com/Getting-started/OpenGL). I highly recommend supporting the project since its high quality content and resource availability. 
