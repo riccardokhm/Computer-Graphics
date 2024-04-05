@@ -1,9 +1,7 @@
 <a href="https://postgresql.org"><img src="https://img.shields.io/badge/Powered%20by-LearnOpenGL-blue.svg"/></a>
 
-<---! ![alt text](https://github.com/riccardokhm/Computer-Graphics/blob/main/OpenGL_Icon.jpg?raw=true) --->
-
 <p align="center">
-  <img width="460" height="300" src="https://github.com/riccardokhm/Computer-Graphics/blob/main/OpenGL_Icon.jpg">
+  <img width="300" height="200" src="https://github.com/riccardokhm/Computer-Graphics/blob/main/OpenGL_Icon.jpg">
 </p>
 
 # Computer-Graphics
