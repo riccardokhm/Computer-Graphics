@@ -2,9 +2,11 @@
 
 
 <p align="center"> 
-  <img  src="https://https://github.com/riccardokhm/Computer-Graphics/blob/main/OpenGL_Icon.jpg" alt="Alt text"> 
+  <img  src="https://https://github.com/riccardokhm/Computer-Graphics/blob/main/OpenGL_Icon.jpg"> 
 </p>
 
+
+![alt text](https://github.com/riccardokhm/Computer-Graphics/blob/main/OpenGL_Icon.jpg?raw=true) 
 # Computer-Graphics
 
 This repository collects all the examples extrapolated from the LearnOpenGL book which you can find [here](https://learnopengl.com/Getting-started/OpenGL). I highly recommend supporting the project since its high quality content and resource availability. 
