@@ -2,7 +2,7 @@
 
 
 <p align="center"> 
-  <img  src="https://github.com/riccardokhm/Computer-Graphics/OpenGL_Icon.png">
+  <img  src="https://github.com/riccardokhm/Computer-Graphics/OpenGL_Icon.jpg">
 </p>
 
 # Computer-Graphics
