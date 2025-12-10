@@ -1,2 +1,3 @@
 ﻿  Main.cpp
-  Solution 1.vcxproj -> C:\Users\utente\Desktop\Computer-Graphics\Learn OpenGL\Solution 1\Solution 1\x64\Debug\Solution 1.exe
+C:\Users\utente\Desktop\Coding\Github\Computer-Graphics\Learn OpenGL\Solution 1\Solution 1\Main.cpp(170,19): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+  Solution 1.vcxproj -> C:\Users\utente\Desktop\Coding\Github\Computer-Graphics\Learn OpenGL\Solution 1\Solution 1\x64\Debug\Solution 1.exe

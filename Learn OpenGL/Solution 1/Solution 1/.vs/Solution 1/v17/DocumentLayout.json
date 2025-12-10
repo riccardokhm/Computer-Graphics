@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\utente\\Desktop\\Computer-Graphics\\Learn OpenGL\\Solution 1\\Solution 1\\",
+  "WorkspaceRootPath": "C:\\Users\\utente\\Desktop\\Coding\\Github\\Computer-Graphics\\Learn OpenGL\\Solution 1\\Solution 1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CA5EFE8-4822-4268-80BD-E3B78AF48947}|Solution 1.vcxproj|C:\\Users\\utente\\Desktop\\Computer-Graphics\\Learn OpenGL\\Solution 1\\Solution 1\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{9CA5EFE8-4822-4268-80BD-E3B78AF48947}|Solution 1.vcxproj|C:\\Users\\utente\\Desktop\\Coding\\Github\\Computer-Graphics\\Learn OpenGL\\Solution 1\\Solution 1\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9CA5EFE8-4822-4268-80BD-E3B78AF48947}|Solution 1.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Users\\utente\\Desktop\\Computer-Graphics\\Learn OpenGL\\Solution 1\\Solution 1\\Main.cpp",
+              "DocumentMoniker": "C:\\Users\\utente\\Desktop\\Coding\\Github\\Computer-Graphics\\Learn OpenGL\\Solution 1\\Solution 1\\Main.cpp",
               "RelativeDocumentMoniker": "Main.cpp",
-              "ToolTip": "C:\\Users\\utente\\Desktop\\Computer-Graphics\\Learn OpenGL\\Solution 1\\Solution 1\\Main.cpp*",
+              "ToolTip": "C:\\Users\\utente\\Desktop\\Coding\\Github\\Computer-Graphics\\Learn OpenGL\\Solution 1\\Solution 1\\Main.cpp*",
               "RelativeToolTip": "Main.cpp*",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAE0AAAArAAAA",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAAALMAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-05T14:34:08.886Z",
               "EditorCaption": ""
