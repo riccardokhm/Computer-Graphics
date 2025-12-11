@@ -1,36 +1,46 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include "Shader.h"	
+
+#define STB_IMAGE_IMPLEMENTATION
+#include "STB/stb_image.h"
 
 #pragma region Fields
 
-unsigned int VBO, VAO, EBO, vertexShader, fragmentShader,fragmentShader1, shaderProgram, shaderProgram1;
+unsigned int VBO, VAO, EBO, vertexShader, fragmentShader,fragmentShader1, shaderProgram, shaderProgram1, texture;
 
 int vertexShadsuccess, fragmentShadsucces, fragmentShadsuccess, linkShadsuccess;
+int width, height, nrChannels;
 char infoLog[512];
 bool isWireframe = false;
 
+char filePath[] = "C:\\Users\\utente\\Desktop\\Coding\\Github\\Computer-Graphics\\Learn OpenGL\\Solution 1\\Solution 1\\Floor.jpg";
+
 const char *vertexShaderSource = "#version 330 core\n"
 "layout (location = 0) in vec3 aPos;\n"
+"layout (location = 1) in vec3 aColor;\n"
+"out vec3 ourColor;\n"
 "void main()\n"
 "{\n"
 "gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
+"ourColor = aColor;\n"
 "}\0"; 
 
 const char *fragmentShaderSource = "#version 330 core\n"
-"uniform vec4 ourColor;\n"
+"in vec3 ourColor;\n"
 "out vec4 FragColor;\n"
 "void main()\n"
 "{\n"
-"FragColor = ourColor;\n"
+"FragColor = vec4(ourColor, 1.0);\n"
 "}\n\0";
 
 float vertices[] = {
-	 0.5f, -0.5f, 0.0f,
-	 0.5f, 0.5f, 0.0f,
-	 0.0f, 0.0f, 0.0f,
-	 -0.5f, 0.5f, 0.0f,
-	 -0.5f, -0.5f, 0.0f,
+	 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, // bottom right
+	 0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f,  // top right
+	 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f,  // center
+	 //-0.5f, 0.5f, 0.0f,
+	 //-0.5f, -0.5f, 0.0f,
 };
 
 unsigned int indices[] = {
@@ -101,6 +111,15 @@ int main()
 	glViewport(0, 0, 800, 600);
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
+	glGenTextures(1, &texture);
+	glBindTexture(GL_TEXTURE_2D, texture);
+
+	// set the texture wrapping/filtering options (on the currently bound texture object)
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
 	glGenVertexArrays(1, &VAO);
 	glGenBuffers(1, &VBO);
 	glGenBuffers(1, &EBO);
@@ -115,10 +134,16 @@ int main()
 
 
 	// Setting vertex attributes pointers
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
 
+	// Setting vertex attributes pointers for color
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+	glEnableVertexAttribArray(1);
 
+
+	/*
+	
 	// Compiling vertex and fragment shaders
 	vertexShader = glCreateShader(GL_VERTEX_SHADER);
 	fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
@@ -145,6 +170,7 @@ int main()
 	else
 		std::cout << "Fragment shader compiled successfully" << std::endl;
 	
+	
 	// Linking vertex and fragment shaders
 	shaderProgram = glCreateProgram();
 	glAttachShader(shaderProgram, vertexShader);
@@ -162,26 +188,53 @@ int main()
 	glDeleteShader(vertexShader);
 	glDeleteShader(fragmentShader);
 
+	*/
+
+	Shader ourShader("Vertex.vert", "Fragment.frag");
+
+	unsigned char* data = stbi_load(filePath, &width, &height, &nrChannels, 0);
+
+	if (data)
+	{
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+		glGenerateMipmap(GL_TEXTURE_2D);
+		std::cout << "Texture loaded successfully" << std::endl;
+		stbi_image_free(data);
+	}
+	else 
+	{
+		std::cout << stbi_failure_reason() << std::endl;
+		std::cout << "Failed to load texture" << std::endl;
+	}
+
+
 	while (!glfwWindowShouldClose(window))
 	{
+
 		//events
 		processInput(window);
 
 		// Update the uniform green color
 		float timeValue = glfwGetTime();
 		float greenValue = (sin(timeValue) / 2.0f) + 0.5f;
-		int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
+		//int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
 
 		//rendering commands
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		// From now on, every rendering call will use this program object (and thus the shaders)
-		glUseProgram(shaderProgram);
-		glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
+		//glUseProgram(shaderProgram);
+		//glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
+
+		ourShader.use();
+		float xoffset = 0.1f;
+		ourShader.setFloat("offset", xoffset);
+
+		//drawing commands
 		glBindVertexArray(VAO);
-		//glDrawArrays(GL_TRIANGLES, 0, 3);
-		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0); // Draw the triangles using the indices
+		glDrawArrays(GL_TRIANGLES, 0, 3);
+		//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0); // Draw the triangles using the indices
 
 		//check and call events and swap the buffers
 		glfwSwapBuffers(window);
